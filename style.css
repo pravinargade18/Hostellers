@@ -201,7 +201,7 @@
     background: #fff;
     display: flex;
     width: 75%;
-    height: 25rem;
+    height: 26rem;
     border-radius: 1rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -270,6 +270,7 @@
 }
 .remeber-me label{
     font-size: 0.8rem;
+    cursor: pointer;
     color: #333;
 }
 .forgot-pass{
@@ -295,6 +296,7 @@
     border-radius: 6px;
     color: white;
     font-size: 16px;
+    cursor: pointer;
     transition: all .2s ease;
 }
 .login-button:hover{
@@ -310,18 +312,109 @@
 }
 
 .login .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    border-left:2px solid #ccc;
+    background: #543bd0;
+    
+
+}
+.login .right span{
+  height: 2rem;
+  text-align: center;
+  color: white;
+   
+   
 }
 
+.login .right .facebook,.twitter,.google{
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 1rem;
+    width: 55%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+    padding: 10px;
+    transition: all .2s ease;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+
+  
+}
+
+.login .right .facebook i,.twitter i,.google i{
+    margin-right: 8px;
+    font-size: 25px;
+    
+}
+.login .right .facebook{
+    background: #036ce5;
+}
+.login .right .google{
+    background: red;;
+}
+.login .right .twitter{
+    background:#1da1f2 ;
+}
+.login .right .facebook:hover{
+    background:black;
+}
+.login .right .google:hover{
+    background:black;
+}
+.login .right .twitter:hover{
+    background:black;
+}
+
+.social{
+    margin-top: 0.5rem;
+    display: none;
+}
+.social .social-icons{
+    text-align: center;
+}
+.social span{
+    margin-left: 1.8rem;
+    
+}
+.social .social-icons{
+    margin-top: 0.4rem;
+}
+.social .social-icons i{
+    margin-right: .5rem;
+    margin-left: .6rem;
+    padding: 6px 8px;
+    font-size: 18px;
+    border-radius: 50%;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+.social .social-icons i.fa-facebook-square{
+    background: #036ce5;
+}
+.social .social-icons i.fa-google{
+    background: red;
+}
+.social .social-icons i.fa-twitter-square{
+    background: #1da1f2;
+}
+.social .social-icons i:hover{
+    background: #000;
+}
 /* *****************************************signUp page************************************* */
 
 .sign-up{
     background: #fff;
     display: flex;
     width: 75%;
-    height: 25rem;
+    height: 26rem;
     border-radius: 1rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -353,6 +446,7 @@
     border-radius: 6px;
     color: white;
     font-size: 16px;
+    cursor: pointer;
     transition: all .2s ease;
 }
 .signup-button:hover{
@@ -421,5 +515,16 @@
     }
     .menu{
         top: 15px;
+    }
+    .social{
+        margin-top: 0.5rem;
+        display: block;
+    }
+    .left form{
+        margin: 1rem auto  ;
+        
+    }
+    .login-line{
+        margin-top: .3rem;
     }
 }
